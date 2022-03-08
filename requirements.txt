@@ -1,0 +1,6 @@
+java8+
+nd4j
+hanlp
+segment
+pinyin4j
+fastjson

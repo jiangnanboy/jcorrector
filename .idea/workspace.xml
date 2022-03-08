@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="85eaa4ce-936d-48ac-9c9c-4336e2ac67ea" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="25BW21BwMTTGCl1XDxqu8f3Vfla" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.36091954" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="sy.core.spelling" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project\idea_workspace\jcorrector" />
+      <recent name="D:\project\idea_workspace\jcorrector\src\main\resources" />
+      <recent name="D:\永中\jcorrector\src\main\java\sy\util" />
+      <recent name="D:\永中\jcorrector\src\main\java\util" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.CorrectDemo">
+    <configuration name="CorrectDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="examples.CorrectDemo" />
+      <module name="jcorrector" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="examples.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NGramModel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sy.core.ngram.NGramModel" />
+      <module name="jcorrector" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sy.core.ngram.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Segment" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sy.util.Segment" />
+      <module name="jcorrector" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sy.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DetectorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jcorrector" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.sy.core.spelling.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.sy.core.spelling" />
+      <option name="MAIN_CLASS_NAME" value="test.sy.core.spelling.DetectorTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CorrectDemo" />
+        <item itemvalue="Application.NGramModel" />
+        <item itemvalue="JUnit.DetectorTest" />
+        <item itemvalue="Application.Segment" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="85eaa4ce-936d-48ac-9c9c-4336e2ac67ea" name="Default Changelist" comment="" />
+      <created>1645000748546</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1645000748546</updated>
+      <workItem from="1645000753918" duration="1923000" />
+      <workItem from="1646391219260" duration="1443000" />
+      <workItem from="1646392765076" duration="2789000" />
+      <workItem from="1646450170539" duration="6013000" />
+      <workItem from="1646472708880" duration="4682000" />
+      <workItem from="1646482801635" duration="1918000" />
+      <workItem from="1646533966695" duration="2416000" />
+      <workItem from="1646570936156" duration="967000" />
+      <workItem from="1646660256762" duration="3309000" />
+      <workItem from="1646737478133" duration="6131000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="705" y="362" key="#Project_Structure" timestamp="1645001628260">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="705" y="362" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1645001628260" />
+    <state x="505" y="208" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1646394235187">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="505" y="208" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.816@0.0.1536.816" timestamp="1646394235187" />
+    <state x="468" y="331" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1646391453397">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="468" y="331" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.816@0.0.1536.816" timestamp="1646391453397" />
+    <state x="544" y="275" width="448" height="273" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1646482672928">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="544" y="275" width="448" height="273" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.816@0.0.1536.816" timestamp="1646482672928" />
+    <state x="103" y="189" key="FileChooserDialogImpl" timestamp="1646738445484">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="103" y="189" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1646738445484" />
+    <state width="1493" height="233" key="GridCell.Tab.0.bottom" timestamp="1646738206633">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1493" height="233" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1646738206633" />
+    <state width="1493" height="233" key="GridCell.Tab.0.center" timestamp="1646738206633">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1493" height="233" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1646738206633" />
+    <state width="1493" height="233" key="GridCell.Tab.0.left" timestamp="1646738206633">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1493" height="233" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1646738206633" />
+    <state width="1493" height="233" key="GridCell.Tab.0.right" timestamp="1646738206633">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1493" height="233" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1646738206633" />
+    <state x="141" y="0" key="SettingsEditor" timestamp="1646747076432">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="141" y="0" key="SettingsEditor/0.0.1536.816@0.0.1536.816" timestamp="1646747076432" />
+    <state x="632" y="194" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1645001777689" />
+    <state x="963" y="84" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1646484203008">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="963" y="84" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.816@0.0.1536.816" timestamp="1646484203008" />
+  </component>
+</project>
