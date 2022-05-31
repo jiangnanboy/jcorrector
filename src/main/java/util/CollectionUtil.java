@@ -8,6 +8,10 @@ import java.util.*;
  */
 public class CollectionUtil<E, T> {
 
+    public static <E> List<E> newArrayList(List<E> list) {
+        return new ArrayList<>(list);
+    }
+
     public static <E> List<E> newArrayList() {
         return new ArrayList<>();
     }
