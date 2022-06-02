@@ -4,7 +4,7 @@
 
 **jcorrector**
 
-1.利用语言模型检测错别字位置，通过拼音音似特征、笔画五笔编辑距离特征及语言模型句子概率值特征纠正错别字。
+1.利用n-gram语言模型检测错别字位置，通过拼音音似特征、笔画五笔编辑距离特征及语言模型句子概率值特征纠正错别字。
 
 2.利用深度学习模型（如macbert等）进行中文拼写纠错。
 
@@ -154,16 +154,16 @@ output:
 数据集来自人民日报2014版，将每句进行分字处理。
 
 ## Neural-Net
-利用神经网络进行中文拼写纠错。
+利用深度学习进行端到端中文拼写纠错。
 
    ### Macbert
     
     这里利用java加载macbert模型，并进行中文拼写纠错，具体见【https://github.com/jiangnanboy/macbert-java-onnx】
     
-    #### usage
-    1.sy.dl/MacBert
+   ##### usage
+   1.sy.dl/MacBert
     
-    ```
+   ```
     String text = "今天新情很好。";
     Pair<BertTokenizer, Map<String, OnnxTensor>> pair = null;
     try {
@@ -176,10 +176,11 @@ output:
     for(Pair<String, String> result : resultList) {
         System.out.println(text + " => " + result.getLeft() + " " + result.getRight());
     }
-    ```
+   ```
     
-    2.result
-    ```
+   2.result
+   
+   ```
     String text = "今天新情很好。";
     
     tokens -> [[CLS], 今, 天, 新, 情, 很, 好, 。, [SEP]]
@@ -189,7 +190,7 @@ output:
     
     tokens -> [[CLS], 你, 找, 到, 你, 最, 喜, 欢, 的, 工, 作, ，, 我, 也, 很, 高, 心, 。, [SEP]]
     你找到你最喜欢的工作，我也很高心。 => 你找到你最喜欢的工作，我也很高兴。 心,兴,15,16
-    ```
+   ```
 
 ## Todo
 
