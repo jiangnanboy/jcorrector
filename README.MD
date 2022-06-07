@@ -213,5 +213,8 @@ output:
 }
 ```
 
+## License
+jcorrector 的授权协议为 Apache License 2.0，可免费用做商业用途。请在产品说明中附加jcorrector的链接和授权协议。
+
 ## Reference
 https://github.com/shibing624/pycorrector
