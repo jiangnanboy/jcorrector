@@ -6,7 +6,7 @@
 
 1.利用n-gram语言模型检测错别字位置，通过拼音音似特征、笔画五笔编辑距离特征及语言模型句子概率值特征纠正错别字。
 
-2.利用深度学习模型（如macbert等）进行中文拼写纠错。
+2.利用深度学习模型（如macbert等）进行中文end2end拼写纠错。
 
 
 **Guide**
@@ -21,6 +21,7 @@
 - [Todo](#Todo)
 - [QQ](#QQ)
 - [Cite](#Cite)
+- [License](#License)
 - [Reference](#reference)
 
 ## Question
