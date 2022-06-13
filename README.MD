@@ -71,6 +71,7 @@
 ## Usage
 见【examples/】
 
+模型下载 链接：https://pan.baidu.com/s/1VbBF_R6IQfKVNDipNN3QDg 提取码：sy12
 - 文本纠错
 
 ``` java
@@ -162,6 +163,10 @@ output:
     这里利用java加载macbert模型，并进行中文拼写纠错，具体见【https://github.com/jiangnanboy/macbert-java-onnx】
     
    ##### usage
+   
+   模型下载 链接：https://pan.baidu.com/s/1VbBF_R6IQfKVNDipNN3QDg 
+   提取码：sy12
+   
    1.sy.dl/MacBert
     
    ```
