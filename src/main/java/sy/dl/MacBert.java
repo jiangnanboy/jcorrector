@@ -19,31 +19,9 @@ import org.nd4j.linalg.factory.Nd4j;
  * @date 2022/5/31 19:03
  */
 public class MacBert {
-
     static BertTokenizer tokenizer;
-    public static void main(String[] args) {
-        String text = "今天新情很好。";
-        text = "你找到你最喜欢的工作，我也很高心。";
-        Pair<BertTokenizer, Map<String, OnnxTensor>> pair = null;
-        try {
-            pair = parseInputText(text);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        var predString = predCSC(pair);
-        List<Pair<String, String>> resultList = getErrors(predString, text);
-        for(Pair<String, String> result : resultList) {
-            System.out.println(text + " => " + result.getLeft() + " " + result.getRight());
-        }
-    }
-
     static {
         tokenizer = new BertTokenizer();
-        try {
-            LoadModel.loadOnnxModel();
-        } catch (OrtException e) {
-            e.printStackTrace();
-        }
     }
 
     /**
@@ -107,7 +85,7 @@ public class MacBert {
         return predString;
     }
 
-    private static List<Pair<String, String>> getErrors(String correctedText, String originText) {
+    public static List<Pair<String, String>> getErrors(String correctedText, String originText) {
         List<String> specialList = CollectionUtil.newArrayList();
         specialList.add(" ");
         specialList.add("“");
