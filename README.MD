@@ -69,7 +69,7 @@
 其它通过maven pom下载
 
 ## Usage
-见【examples/】
+见【examples/ngram】
 
 模型下载 链接：https://pan.baidu.com/s/1VbBF_R6IQfKVNDipNN3QDg 提取码：sy12
 - 文本纠错
@@ -167,7 +167,7 @@ output:
    模型下载 链接：https://pan.baidu.com/s/1VbBF_R6IQfKVNDipNN3QDg 
    提取码：sy12
    
-   1.sy.dl/MacBert
+   1.examples/dl/MacBertCorrect
     
    ```
     String text = "今天新情很好。";
