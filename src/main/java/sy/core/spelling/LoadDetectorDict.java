@@ -115,4 +115,17 @@ public class LoadDetectorDict {
         return customConfusion;
     }
 
+    /**
+     * set custom confusion dict
+     * @param filePath
+     */
+    public static void setCustomConfusionDict(String filePath) {
+        if(null == customConfusion){
+            customConfusion = getCustomConfusionDict(filePath);
+        } else {
+            Map<String, String> customDict = getCustomConfusionDict(filePath);
+            customConfusion.putAll(customDict);
+        }
+    }
+
 }
