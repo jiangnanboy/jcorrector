@@ -1,5 +1,6 @@
 package sy.core.spelling;
 
+import info.debatty.java.stringsimilarity.NormalizedLevenshtein;
 import util.CollectionUtil;
 
 import java.util.*;
@@ -56,6 +57,11 @@ public class SpellingUtils {
         }
 
         return CollectionUtil.newHashset(editDistList);
+    }
+
+    public static double editDistance(String chr1, String chr2) {
+        NormalizedLevenshtein l = new NormalizedLevenshtein();
+        return l.distance(chr1, chr2);
     }
 
 }
