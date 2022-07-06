@@ -104,6 +104,57 @@ output:
 
 默认字粒度、词粒度的纠错都打开，可以通过enableCharError()和enableWordError()进行设置。
 
+- 专名错误
+
+见【examples/proper】
+
+``` java
+List<String> testLine = List.of(
+                "报应接中迩来",
+                "这块名表带带相传",
+                "这块名表代代相传",
+                "他贰话不说把牛奶喝完了",
+                "这场比赛我甘败下风",
+                "这场比赛我甘拜下封",
+                "这家伙还蛮格尽职守的",
+                "报应接中迩来",  // 接踵而来
+        "人群穿流不息",
+                "这个消息不径而走",
+                "这个消息不胫儿走",
+                "眼前的场景美仑美幻简直超出了人类的想象",
+                "看着这两个人谈笑风声我心理不由有些忌妒",
+                "有了这一番旁证博引",
+                "有了这一番旁针博引",
+                "这群鸟儿迁洗到远方去了",
+                "这群鸟儿千禧到远方去了",
+                "美国前总统特琅普给普京点了一个赞，特朗普称普金做了一个果断的决定"
+        );
+        for(String line : testLine) {
+            System.out.println(properCorrector.correct(line));
+        }
+```
+
+output:
+```
+[{"endIdx":6,"correct":"接踵而来","startIdx":2,"type":"专名错误","error":"接中迩来"}]
+[{"endIdx":8,"correct":"代代相传","startIdx":4,"type":"专名错误","error":"带带相传"}]
+[]
+[{"endIdx":5,"correct":"二话不说","startIdx":1,"type":"专名错误","error":"贰话不说"}]
+[{"endIdx":9,"correct":"甘拜下风","startIdx":5,"type":"专名错误","error":"甘败下风"}]
+[{"endIdx":9,"correct":"甘拜下风","startIdx":5,"type":"专名错误","error":"甘拜下封"}]
+[{"endIdx":9,"correct":"恪尽职守","startIdx":5,"type":"专名错误","error":"格尽职守"}]
+[{"endIdx":6,"correct":"接踵而来","startIdx":2,"type":"专名错误","error":"接中迩来"}]
+[{"endIdx":6,"correct":"川流不息","startIdx":2,"type":"专名错误","error":"穿流不息"}]
+[{"endIdx":8,"correct":"不胫而走","startIdx":4,"type":"专名错误","error":"不径而走"}]
+[{"endIdx":8,"correct":"不胫而走","startIdx":4,"type":"专名错误","error":"不胫儿走"}]
+[{"endIdx":9,"correct":"美轮美奂","startIdx":5,"type":"专名错误","error":"美仑美幻"}]
+[{"endIdx":10,"correct":"谈笑风生","startIdx":6,"type":"专名错误","error":"谈笑风声"}]
+[{"endIdx":9,"correct":"旁征博引","startIdx":5,"type":"专名错误","error":"旁证博引"}]
+[{"endIdx":9,"correct":"旁征博引","startIdx":5,"type":"专名错误","error":"旁针博引"}]
+[{"endIdx":6,"correct":"迁徙","startIdx":4,"type":"专名错误","error":"迁洗"}]
+[{"endIdx":6,"correct":"迁徙","startIdx":4,"type":"专名错误","error":"千禧"}]
+[{"endIdx":8,"correct":"特朗普","startIdx":5,"type":"专名错误","error":"特琅普"},{"endIdx":23,"correct":"普京","startIdx":21,"type":"专名错误","error":"普金"}]
+```
 
 #### 训练
 
