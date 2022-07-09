@@ -128,7 +128,7 @@ public class Detector {
     /**
      * take the position of the suspected error word by MAD(the mean absolute deviation)
      * @param scores INDArray
-     * @return
+     * @returnse
      */
     private static List<Integer> getMaybeErrorIndex(INDArray scores) {
         return getMaybeErrorIndex(scores,0.6745f, 2);
