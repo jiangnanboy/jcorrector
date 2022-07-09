@@ -104,7 +104,7 @@ output:
 
 默认字粒度、词粒度的纠错都打开，可以通过enableCharError()和enableWordError()进行设置。
 
-- 专名错误
+- 成语、专名纠错
 
 见【examples/proper】
 
