@@ -104,6 +104,12 @@ output:
 
 默认字粒度、词粒度的纠错都打开，可以通过enableCharError()和enableWordError()进行设置。
 
+- 加载自定义混淆集
+
+通过加载自定义混淆集，支持用户纠正已知的错误
+
+示例[LoadDetectorDict.setCustomConfusionDict("/path")](sy/spelling/LoadDetectorDict.java)
+
 - 成语、专名纠错
 
 见【examples/proper】
