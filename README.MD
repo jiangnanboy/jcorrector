@@ -256,9 +256,15 @@ ngram语言模型的训练及加载见sy/core/ngram/NGramModel
 此项目会持续优化，后期会尝试一些其它的纠错方案。
 
 
-## QQ
+## contact
 
-有问题加我QQ：2229029156。
+如有搜索、推荐、nlp以及大数据挖掘等问题或合作，可联系我：
+
+1、我的github项目介绍：https://github.com/jiangnanboy
+
+2、我的博客园技术博客：https://www.cnblogs.com/little-horse/
+
+3、我的QQ号:2229029156
 
 ## Cite
 
