@@ -157,6 +157,40 @@ output:
 [{"endIdx":6,"correct":"迁徙","startIdx":4,"type":"专名错误","error":"千禧"}]
 [{"endIdx":8,"correct":"特朗普","startIdx":5,"type":"专名错误","error":"特琅普"},{"endIdx":23,"correct":"普京","startIdx":21,"type":"专名错误","error":"普金"}]
 ```
+- 基于模板中文语法纠错
+
+见【examples/gec】
+
+``` java
+String templatePath = GecCheck.class.getClassLoader().getResource(PropertiesReader.get("template")).getPath().replaceFirst("/", "");
+GecCheck gecRun = new GecCheck();
+gecRun.init(templatePath);
+String sentence;
+while (true) {
+    System.out.println("Please input a sentence:");
+    Scanner scanner = new Scanner(System.in);
+    sentence = scanner.next();
+    String infoStr = gecRun.checkCorrect(sentence);
+    if(StringUtils.isNotBlank(infoStr)) {
+        System.out.println(infoStr);
+    }
+}
+```
+
+output:
+```
+爸爸看完小品后忍俊不禁笑了起来。
+爸爸看完小品后忍俊不禁。
+[{"correct":"忍俊不禁","start":7,"end":15,"error":"忍俊不禁笑了起来"}]
+
+孙中山辞职后不再过问政治，决心尽瘁社会上事业，开始着手社会革命。
+孙中山辞职后不再过问政治，决心尽瘁社会上事业，开始社会革命。
+[{"correct":"开始","start":23,"end":27,"error":"开始着手"}]
+
+在俄国社会民主工党第二次代表大会中，列宁提出效仿民意党，建立一套围绕少数“职业革命家”为核心、党员对核心高度服从的集权化的组织模式，即民主集中制。
+在俄国社会民主工党第二次代表大会中，列宁提出效仿民意党，建立一套少数“职业革命家”为核心、党员对核心高度服从的集权化的组织模式，即民主集中制。
+[{"correct":"少数“职业革命家”为核心","start":32,"end":46,"error":"围绕少数“职业革命家”为核心"}]
+```
 
 #### 训练
 
