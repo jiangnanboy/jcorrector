@@ -3,7 +3,6 @@ package sy.core.gec;
 import com.alibaba.fastjson.JSON;
 import org.apache.commons.lang3.StringUtils;
 import util.CollectionUtil;
-import util.PropertiesReader;
 
 import java.io.BufferedReader;
 import java.nio.charset.StandardCharsets;
