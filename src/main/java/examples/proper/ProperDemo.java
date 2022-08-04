@@ -9,10 +9,10 @@ import java.util.List;
  * @author sy
  * @date 2022/7/5 21:05
  */
-public class ProperCorrect {
+public class ProperDemo {
     public static void main(String...args) {
-        String properNamePath = ProperCorrect.class.getClassLoader().getResource(PropertiesReader.get("proper_name_path")).getPath().replaceFirst("/", "");
-        String strokePath = ProperCorrect.class.getClassLoader().getResource(PropertiesReader.get("stroke_path")).getPath().replaceFirst("/", "");;
+        String properNamePath = ProperDemo.class.getClassLoader().getResource(PropertiesReader.get("proper_name_path")).getPath().replaceFirst("/", "");
+        String strokePath = ProperDemo.class.getClassLoader().getResource(PropertiesReader.get("stroke_path")).getPath().replaceFirst("/", "");;
         ProperCorrector properCorrector = new ProperCorrector(properNamePath, strokePath);
 
         List<String> testLine = List.of(
