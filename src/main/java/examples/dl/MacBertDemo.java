@@ -14,7 +14,7 @@ import java.util.Map;
  * @author YanShi
  * @date 2022/7/4 20:45
  */
-public class MacBertCorrect {
+public class MacBertDemo {
 
     public static void main(String[] args) throws OrtException {
         LoadModel.loadOnnxModel();
