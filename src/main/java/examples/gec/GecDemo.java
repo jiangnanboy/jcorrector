@@ -12,7 +12,7 @@ import java.util.Scanner;
  */
 public class GecDemo {
     public static void main(String...args) {
-        String templatePath = GecCheck.class.getClassLoader().getResource(PropertiesReader.get("template")).getPath().replaceFirst("/", "");
+        String templatePath = GecDemo.class.getClassLoader().getResource(PropertiesReader.get("template")).getPath().replaceFirst("/", "");
         GecCheck gecRun = new GecCheck();
         gecRun.init(templatePath);
         String sentence;
