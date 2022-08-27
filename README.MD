@@ -68,7 +68,7 @@
 见【examples/ngram】
 
 模型下载 链接：https://pan.baidu.com/s/1VbBF_R6IQfKVNDipNN3QDg 提取码：sy12
-- 文本纠错
+###文本纠错
 
 ``` java
 import sy.core.spelling.Corrector;
@@ -83,7 +83,7 @@ output:
 [{"endIdx":6,"correct":"应该","startIdx":4,"type":"拼写错误","error":"因该"},{"endIdx":11,"correct":"让座","startIdx":9,"type":"拼写错误","error":"让坐"}]
 ```
 
-- 错误检测
+###错误检测
 
 ``` java
 import sy.core.spelling.Detector;
@@ -100,13 +100,13 @@ output:
 
 默认字粒度、词粒度的纠错都打开，可以通过enableCharError()和enableWordError()进行设置。
 
-- 加载自定义混淆集
+###加载自定义混淆集
 
 通过加载自定义混淆集，支持用户纠正已知的错误
 
 示例[LoadDetectorDict.setCustomConfusionDict("/path")](sy/spelling/LoadDetectorDict.java)
 
-- 成语、专名纠错
+###成语、专名纠错
 
 见【examples/proper】
 
@@ -157,7 +157,7 @@ output:
 [{"endIdx":6,"correct":"迁徙","startIdx":4,"type":"专名错误","error":"千禧"}]
 [{"endIdx":8,"correct":"特朗普","startIdx":5,"type":"专名错误","error":"特琅普"},{"endIdx":23,"correct":"普京","startIdx":21,"type":"专名错误","error":"普金"}]
 ```
-- 基于模板中文语法纠错
+###基于模板中文语法纠错
 
 见【examples/gec】
 
