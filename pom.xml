@@ -11,12 +11,6 @@
     <dependencies>
 
         <dependency>
-            <groupId>com.github.houbb</groupId>
-            <artifactId>segment</artifactId>
-            <version>0.1.8</version>
-        </dependency>
-
-        <dependency>
             <groupId>com.microsoft.onnxruntime</groupId>
             <artifactId>onnxruntime</artifactId>
             <version>1.11.0</version>
@@ -55,9 +49,8 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.12</version>
+            <version>4.13.2</version>
         </dependency>
-
 
         <!--
         <dependency>
@@ -77,12 +70,6 @@
             <groupId>com.belerweb</groupId>
             <artifactId>pinyin4j</artifactId>
             <version>2.5.1</version>
-        </dependency>
-
-        <dependency>
-            <groupId>info.debatty</groupId>
-            <artifactId>java-string-similarity</artifactId>
-            <version>2.0.0</version>
         </dependency>
 
     </dependencies>
