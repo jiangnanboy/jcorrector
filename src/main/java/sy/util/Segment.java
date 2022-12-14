@@ -1,9 +1,5 @@
 package sy.util;
 
-import com.github.houbb.segment.api.ISegmentResult;
-import com.github.houbb.segment.bs.SegmentBs;
-import com.github.houbb.segment.support.tagging.pos.tag.impl.SegmentPosTaggings;
-
 import com.hankcs.hanlp.HanLP;
 import com.hankcs.hanlp.seg.common.Term;
 
@@ -18,16 +14,6 @@ import java.util.regex.Pattern;
  * @date 2022/2/2 21:15
  */
 public class Segment {
-
-    public static List<Entry> jiebaSegment(String text) {
-        List<Entry> entryList = CollectionUtil.newArrayList();
-        List<ISegmentResult> resultList = SegmentBs.newInstance()
-                .posTagging(SegmentPosTaggings.simple())
-                .segment(text);
-        resultList.forEach(result -> entryList.add(new Entry(result.word(), result.pos())));
-
-        return entryList;
-    }
 
     public static List<Entry> hanlpSegment(String text, boolean posi) {
         List<Entry> entryList = CollectionUtil.newArrayList();
