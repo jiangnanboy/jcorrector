@@ -3,7 +3,6 @@ package sy.dl.bert;
 import ai.onnxruntime.OrtEnvironment;
 import ai.onnxruntime.OrtException;
 import ai.onnxruntime.OrtSession;
-import util.PropertiesReader;
 
 import java.util.Optional;
 
@@ -15,15 +14,14 @@ public class LoadModel {
 
     public static OrtSession session;
     public static OrtEnvironment env;
+
     /**
      * load onnx model
+     * @param onnxPath
      * @throws OrtException
      */
-    public static void loadOnnxModel() throws OrtException {
+    public static void loadOnnxModel(String onnxPath) throws OrtException {
         System.out.println("load onnx model...");
-        String onnxPath = LoadModel.class.getClassLoader().getResource(PropertiesReader.get("onnx_model_path")).getPath().replaceFirst("/", "");
-//        String onnxPath = PropertiesReader.get("onnx_model_path");
-
         env = OrtEnvironment.getEnvironment();
         session = env.createSession(onnxPath, new OrtSession.SessionOptions());
     }
