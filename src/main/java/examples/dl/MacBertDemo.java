@@ -6,6 +6,7 @@ import org.apache.commons.lang3.tuple.Pair;
 import sy.dl.MacBert;
 import sy.dl.bert.LoadModel;
 import sy.dl.bert.tokenizerimpl.BertTokenizer;
+import util.PropertiesReader;
 
 import java.util.List;
 import java.util.Map;
@@ -17,7 +18,9 @@ import java.util.Map;
 public class MacBertDemo {
 
     public static void main(String[] args) throws OrtException {
-        LoadModel.loadOnnxModel();
+        // macbert onnx path
+        String onnxPath = MacBertDemo.class.getClassLoader().getResource(PropertiesReader.get("onnx_model_path")).getPath().replaceFirst("/", "");
+        LoadModel.loadOnnxModel(onnxPath);
         String text = "今天新情很好。";
         text = "你找到你最喜欢的工作，我也很高心。";
         Pair<BertTokenizer, Map<String, OnnxTensor>> pair = null;
