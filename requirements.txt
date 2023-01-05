@@ -1,6 +1,6 @@
-java8+
+jav11+
 nd4j
 hanlp
-segment
 pinyin4j
-fastjson
+fastjson2
+onnxruntime
