@@ -33,9 +33,6 @@ public class MacBert {
     public static Pair<BertTokenizer, Map<String, OnnxTensor>> parseInputText(String text) throws Exception{
         var env = LoadModel.env;
         List<String > tokens = tokenizer.tokenize(text);
-
-        System.out.println(tokens);
-
         List<Integer> tokenIds = tokenizer.convert_tokens_to_ids(tokens);
         long[] inputIds = new long[tokenIds.size()];
         long[] attentionMask = new long[tokenIds.size()];
