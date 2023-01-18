@@ -100,7 +100,7 @@ public class MacBert {
                 correctedText = correctedText.substring(0, i) + oriChar + correctedText.substring(i+1);
                 continue;
             }
-            if( i > correctedText.length()) {
+            if( i >= correctedText.length()) {
                 continue;
             }
             if(!StringUtils.equals(oriChar,correctedText.substring(i, i+1))) {
