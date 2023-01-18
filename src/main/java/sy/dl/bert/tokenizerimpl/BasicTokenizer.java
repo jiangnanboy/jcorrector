@@ -37,7 +37,10 @@ public class BasicTokenizer implements Tokenizer {
 		List<String> orig_tokens = TokenizerUtils.whitespace_tokenize(text);
 		List<String> split_tokens = CollectionUtil.newArrayList();
 		for (String token : orig_tokens) {
-			if (do_lower_case && !never_split.contains(token)) {
+			if(do_lower_case) {
+				token = token.toLowerCase();
+			}
+			if (!never_split.contains(token)) {
 				token = TokenizerUtils.run_strip_accents(token);
 				split_tokens.addAll(TokenizerUtils.run_split_on_punc(token, never_split));
 			} else {
