@@ -58,10 +58,10 @@ public class MacBert {
      * @param triple
      * @return
      */
-    public static String predCSC(Pair<BertTokenizer, Map<String, OnnxTensor>> triple) {
+    public static List<String> predCSC(Pair<BertTokenizer, Map<String, OnnxTensor>> triple) {
         var tokenizer = triple.getLeft();
         var inputs =triple.getRight();
-        String predString = null;
+        List<String> predTokenList = CollectionUtil.newArrayList();
         try{
             var session = LoadModel.session;
             try(var results = session.run(inputs)) {
@@ -70,16 +70,14 @@ public class MacBert {
                 INDArray indArrayLabels = Nd4j.create(labels[0]);
                 INDArray index = Nd4j.argMax(indArrayLabels, -1);
                 int[] predIndex = index.toIntVector();
-                StringBuffer predTokens = new StringBuffer();
                 for(int idx=1; idx<predIndex.length -1; idx++) {
-                    predTokens.append(tokenizer.convert_ids_to_tokens(predIndex[idx]));
+                    predTokenList.add(tokenizer.convert_ids_to_tokens(predIndex[idx]));
                 }
-                predString = predTokens.toString();
             }
         } catch (OrtException e) {
             e.printStackTrace();
         }
-        return predString;
+        return predTokenList;
     }
 
     public static List<Pair<String, String>> getErrors(String correctedText, String originText) {
