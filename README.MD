@@ -293,6 +293,8 @@ ngram语言模型的训练及加载见sy/core/ngram/NGramModel
 
 (2).剔除长期没更新有漏洞的jar包，重写相关方法
 
+(3).对berttokenizer进行改写
+
 ## contact
 
 如有搜索、推荐、nlp以及大数据挖掘等问题或合作，可联系我：
