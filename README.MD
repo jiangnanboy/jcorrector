@@ -67,7 +67,28 @@
 ## Usage
 见【examples/ngram】
 
-模型下载 链接：https://pan.baidu.com/s/1VbBF_R6IQfKVNDipNN3QDg 提取码：sy12
+模型下载
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<table style="width: 80%;">
+  <tr>
+      <td style="width: 20%;"><div align="center"><strong>模型</strong></div></td>
+      <td style="width: 30%;"><div align="center"><strong>HuggingFace</strong></div></td>
+  </tr>
+  
+  <tr>
+      <td><center>jcorrector_ngram</center></td>
+      <td><center>🤗<a href="https://huggingface.co/jiangnanboy/jcorrector_ngram">jcorrector_ngram</a></center></td>
+  </tr>
+
+</table>
+</body>
+</html>
+
 ### 文本纠错
 
 ``` java
@@ -251,8 +272,26 @@ ngram语言模型的训练及加载见sy/core/ngram/NGramModel
     
    ##### usage
    
-   模型下载 链接：https://pan.baidu.com/s/1VbBF_R6IQfKVNDipNN3QDg 
-   提取码：sy12
+   模型下载
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<table style="width: 80%;">
+  <tr>
+      <td style="width: 20%;"><div align="center"><strong>模型</strong></div></td>
+      <td style="width: 30%;"><div align="center"><strong>HuggingFace</strong></div></td>
+  </tr>
+  
+  <tr>
+      <td><center>jcorrector_macbert</center></td>
+      <td><center>🤗<a href="https://huggingface.co/jiangnanboy/jcorrector_macbert">jcorrector_macbert</a></center></td>
+  </tr>
+
+</table>
+</body>
+</html>
    
    1.examples/dl/MacBertCorrect
     
