@@ -289,6 +289,16 @@ ngram语言模型的训练及加载见sy/core/ngram/NGramModel
       <td><center>🤗<a href="https://huggingface.co/jiangnanboy/jcorrector_macbert_v1">jcorrector_macbert_v1</a></center></td>
   </tr>
 
+  <tr>
+      <td><center>jcorrector_macbert_v2</center></td>
+      <td><center>🤗<a href="https://huggingface.co/jiangnanboy/jcorrector_macbert_v2">jcorrector_macbert_v2</a></center></td>
+  </tr>
+
+<tr>
+      <td><center>jcorrector_macbert_v3</center></td>
+      <td><center>🤗<a href="https://huggingface.co/jiangnanboy/jcorrector_macbert_v3">jcorrector_macbert_v3</a></center></td>
+  </tr>
+
 </table>
 </body>
 </html>
