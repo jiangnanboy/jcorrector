@@ -285,7 +285,7 @@ ngram语言模型的训练及加载见sy/core/ngram/NGramModel
   </tr>
   
   <tr>
-      <td><center>jcorrector_macbert</center></td>
+      <td><center>jcorrector_macbert_v1</center></td>
       <td><center>🤗<a href="https://huggingface.co/jiangnanboy/jcorrector_macbert">jcorrector_macbert</a></center></td>
   </tr>
 
