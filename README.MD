@@ -360,7 +360,7 @@ ngram语言模型的训练及加载见sy/core/ngram/NGramModel
 
 ```latex
 @{jcorrector,
-  author = {Shi Yan},
+  author = {jiangnanboy},
   title = {jcorrector: Text Error Correction Tool},
   year = {2022},
   url = {https://github.com/jiangnanboy/jcorrector},
